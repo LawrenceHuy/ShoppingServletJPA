@@ -1,7 +1,0 @@
-# Copy file này thành mail.properties (file đó đã nằm trong .gitignore - KHÔNG commit mật khẩu lên GitHub)
-# Gmail: bật xác minh 2 bước rồi tạo "Mật khẩu ứng dụng" (App password, 16 ký tự) tại https://myaccount.google.com/apppasswords
-mail.username=your_gmail@gmail.com
-mail.password=your_16_char_app_password
-mail.host=smtp.gmail.com
-mail.port=587
-mail.from.name=Shopping MVC
