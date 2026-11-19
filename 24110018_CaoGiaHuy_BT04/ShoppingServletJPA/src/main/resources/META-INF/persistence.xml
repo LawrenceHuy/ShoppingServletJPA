@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+
+	<persistence-unit name="jpa-hibernate-sqlserver">
+		<class>vn.iotstar.entity.Category</class>
+		<class>vn.iotstar.entity.Video</class>
+		<class>vn.iotstar.entity.User</class>
+		<class>vn.iotstar.entity.OtpToken</class>
+		<properties>
+			<!-- Sửa port / password cho đúng máy bạn (MSSQLSERVER01 của bạn: port 1444, sa/Abc12345) -->
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:sqlserver://localhost:1444;encrypt=true;trustServerCertificate=true;databaseName=ShoppingServletJPA" />
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="jakarta.persistence.jdbc.user" value="sa" />
+			<property name="jakarta.persistence.jdbc.password" value="Abc12345" />
+
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<!-- update: tự tạo/cập nhật bảng từ entity -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+</persistence>
