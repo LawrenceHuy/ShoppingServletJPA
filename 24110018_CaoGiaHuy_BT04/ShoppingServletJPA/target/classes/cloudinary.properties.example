@@ -1,0 +1,5 @@
+# Copy file này thành cloudinary.properties (KHÔNG commit) rồi điền thông tin ở Cloudinary Dashboard.
+# Hoặc đặt biến môi trường CLOUDINARY_URL=cloudinary://API_KEY:API_SECRET@CLOUD_NAME
+cloudinary.cloud_name=your_cloud_name
+cloudinary.api_key=your_api_key
+cloudinary.api_secret=your_api_secret
